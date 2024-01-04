@@ -54,6 +54,47 @@ Mewarisi metode getTanggal(), getObat(), getJumlah(), getTotalHarga(), dan setTo
 hitungTotalHarga(): Implementasi dari metode interface Pembelian untuk menghitung total harga pembelian obat.
 prosesPembayaran(double totalHarga): Implementasi dari metode interface Pembelian untuk melakukan proses pembayaran.
 
+## Skenario program
+### Pengguna Memasukkan Data Pelanggan:
+Pengguna membuka aplikasi.
+Pengguna mengisi formulir dengan informasi pelanggan, termasuk nama, alamat, dan tanggal pembelian.
+Pengguna mengklik tombol "Submit" setelah mengisi formulir.
+
+### Pengguna Memilih Obat yang Ingin Dibeli:
+Setelah formulir pelanggan diisi, pengguna memasukkan nomor obat yang ingin dibeli dan jumlahnya.
+Pengguna memastikan bahwa nomor obat yang dimasukkan valid (1-5).
+Pengguna mengklik tombol "Submit" lagi.
+
+### Validasi Stok Obat:
+Program melakukan validasi untuk memastikan jumlah obat yang diminta tidak melebihi stok yang tersedia.
+Jika jumlah obat melebihi stok, program menampilkan pesan di konsol dan transaksi dibatalkan.
+
+### Pencatatan dan Pengurangan Stok Obat:
+Jika jumlah obat valid, program mencatat transaksi pembelian obat.
+Stok obat yang tersedia dikurangi sesuai dengan jumlah obat yang dibeli.
+
+### Cetak Transaksi:
+Program mencetak informasi transaksi, termasuk tanggal, obat yang dibeli, jumlah, total harga, stok obat tersisa, dan jenis obat di konsol.
+
+### Tampilan Hasil Transaksi:
+Program menampilkan hasil transaksi pada halaman baru.
+Pengguna dapat melihat detail transaksi seperti tanggal, obat yang dibeli, jumlah, total harga, stok obat tersisa, dan jenis obat.
+
+### Alert Formulir Belum Lengkap:
+Jika pengguna tidak mengisi semua kolom pada formulir, program menampilkan popup alert yang memberi tahu bahwa formulir belum lengkap.
+
+### Alert Jumlah Obat Melebihi Stok:
+Jika jumlah obat yang diminta melebihi stok, program menampilkan pesan di konsol yang memberitahu pengguna bahwa transaksi dibatalkan.
+
+### Penanganan Nomor Obat Tidak Valid:
+Jika pengguna memasukkan nomor obat yang tidak valid (lebih dari 5 atau kurang dari 1), program menampilkan pesan di konsol.
+
+### Pembayaran (Cetak ke Konsol):
+Program mencetak informasi pembayaran (hanya menampilkan di konsol) dengan jumlah yang harus dibayar berdasarkan total harga transaksi.
+
+### Pengguna Melakukan Transaksi Lain:
+Pengguna dapat kembali ke langkah 2 untuk melakukan transaksi pembelian obat lainnya.
+Pengguna dapat menutup aplikasi setelah melakukan sejumlah transaksi.
 
 ## Cara menjalankan Program
 1. jalankan program di file main.java
